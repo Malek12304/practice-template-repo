@@ -1,10 +1,10 @@
-function movePlayer(direction) {
-    return new Promise((resolve) => {
-        console.log(`Moving player ${direction}...`);
+function calculateScore(points) {
+  return new Promise(resolve => {
+    console.log('Calculating score...');
 
-        setTimeout(() => {
-            console.log(`Player moved ${direction}`);
-            resolve(`Player moved ${direction}`);
-        }, 1000); // Simulating movement delay
-    });
+    setTimeout(() => {
+      console.log(`Score updated: ${points} points`);
+      resolve(points);
+    }, 1500);
+  });
 }
